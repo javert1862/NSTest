@@ -5,8 +5,7 @@ import java.util.Map;
 
 public class Matrix {
 
-    //changed due to visual testing
-    public HashMap<Point, Integer> matrixMap = new HashMap<>();
+    private HashMap<Point, Integer> matrixMap = new HashMap<>();
 
     /**
      * Update matrix value at a given row and column
