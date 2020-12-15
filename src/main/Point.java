@@ -2,14 +2,22 @@ package main;
 
 import java.util.Objects;
 
-public class Point {
+public final class Point {
 
-    private int x;
-    private int y;
+    private final int row;
+    private final int column;
 
-    public Point(final int x, final int y) {
-        this.x = x;
-        this.y = y;
+    public Point(final int row, final int column) {
+        this.row = row;
+        this.column = column;
+    }
+
+    public int getRow() {
+        return row;
+    }
+
+    public int getColumn() {
+        return column;
     }
 
     @Override
@@ -21,12 +29,12 @@ public class Point {
             return false;
         }
         final Point point = (Point) o;
-        return x == point.x &&
-                y == point.y;
+        return row == point.row &&
+                column == point.column;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(x, y);
+        return Objects.hash(row, column);
     }
 }

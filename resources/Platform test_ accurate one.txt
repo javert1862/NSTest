@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------
+Instructions:
+
+- Thanks for your interest in NetSuite development!  Please complete the
+  following questions.  If you can't solve a problem completely, feel free to
+  submit your best partial solution, together with a comment as to what is
+  missing or what shortcomings you see with your solution.  We give partial
+  credit!
+
+- For programming questions, Java is the preferred language.  However, you may
+  also use another modern object-oriented language such as C++, Python, Ruby,
+  JavaScript, C#, or Objective C, or a functional language such as Scheme,
+  Haskell, Erlang, Scala, or OCaml.  Just let us know what you're doing.
+
+- We'll be looking at everything.  Pretend you are writing production code.
+  We'll take into account comments (if any), identifier names, and formatting.
+
+- Good luck!                                                               
+
+
+--------------------------------------------------------------------------------
+
+1. Given an unsorted integer array, place all zeros to the end of the array 
+without changing the sequence of non-zero elements.
+
+Example:
+
+list1 = [1,3,0,8,12,0,4,0,7] 
+return [1,3,8,12,4,7,0,0,0]
+
+What is the algorithmic complexity ("big O") of your function?
+
+--------------------------------------------------------------------------------
+
+2. A palindrome is a word that reads the same backward or forward. Write a 
+function that checks if a given word is a palindrome. Character case is 
+significant.
+
+Example:
+
+word = "dabcbad"  returns true
+word = "Deed"  returns false (character cases differ)
+
+What is the algorithmic complexity ("big O") of your function?
+
+--------------------------------------------------------------------------------
+
+3. Design a simple storage mechanism for sparse matrixes of integers (ie 
+matrixes that have only very few non-zero elements but can be potentially 
+large). Implement two methods on such matrixes:
+
+  /* update matrix value at a given row and column */ 
+	void set(int row, int col, int val) 
+  
+  /* return the sum of values from the top left corner to the given row, column sub-matrix */
+	int sum(int row, int col)  
+                      
+
+Assume all indices in the methods are zero-based.
+
+Example:
+
+Matrix A = 
+            ( 0  3  0  0 )
+            ( 1  0  0  0 )
+            ( 0  0  4  -1)
+            ( 0  1  0  0 )
+
+set(0,1,5) on A = 
+            ( 0  5  0  0 )
+            ( 1  0  0  0 )
+            ( 0  0  4  -1)
+            ( 0  1  0  0 )
+            
+sum(2,2) on A = 8 /* =1+3+4 */
+
